@@ -214,5 +214,33 @@ section.your-active-class .landing__container::after {
 	}
 }
 
-@media only screen and (max-width: 760px){
-    
+@media screen and (max-width: 760px){
+body{
+overflow-x: hidden;
+}
+
+.navbar__list{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 5vh; 
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+}
+
+.navbar__list li{
+    opacity: 0;
+}
+
+.icon{
+    display: block;
+    width: 25px;
+    height: 2px;
+    color: cornsilk;
+    margin: 5px;
+}
+    }
