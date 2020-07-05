@@ -40,12 +40,11 @@ h1 {
     list-style: none;
 }
 
-.icon{
+#menu {
     display: none;
-    width: 25px;
-    height: 2px;
     color: cornsilk;
     margin: 5px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 35em){
@@ -215,6 +214,7 @@ section.your-active-class .landing__container::after {
 }
 
 @media screen and (max-width: 760px){
+
 body{
 overflow-x: hidden;
 }
@@ -230,17 +230,19 @@ overflow-x: hidden;
     align-items: center;
     width: 30%;
     transform: translateX(100%);
+    transition: transform 0.5s ease-in;
 }
 
 .navbar__list li{
     opacity: 0;
 }
 
-.icon{
+#menu {
     display: block;
-    width: 25px;
-    height: 2px;
-    color: cornsilk;
-    margin: 5px;
 }
-    }
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+    
